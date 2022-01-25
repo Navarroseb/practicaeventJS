@@ -15,3 +15,15 @@ window.increaseCounter = function increaseCounter()
 	//update the screen with the new value
 	document.getElementById('screen').innerHTML = "The counter value is "+counter;
 }
+
+let button = document.createElement('button'); 
+button.type = 'button'; 
+button.innerText = 'Decrease'; 
+document.body.appendChild(button);
+
+button.onclick = function(decreasecounter){
+
+	counter--;
+	document.getElementById('screen').innerHTML = "The counter value is "+counter;
+}
+

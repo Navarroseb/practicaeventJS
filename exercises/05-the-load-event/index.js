@@ -1,4 +1,4 @@
-window.onload = function loadListener() {
+document.body.onload = function loadListener() {
     alert("loading finished");
     
   };

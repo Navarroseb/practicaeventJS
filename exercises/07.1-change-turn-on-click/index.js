@@ -1,15 +1,26 @@
-var currentUser = "Mario";
+var currentUser = "Josh";
 
 window.onload = function loadfn() {
 	document.getElementById("screen").innerHTML = "It's " + currentUser + "'s turn";
 }
 
 window.turnChanger = function turnChanger() {
-	if (currentUser == "Mario") {
+	if (currentUser == "Josh") {
 		currentUser = "Juan";
-	} else {
+				
+	} 
+	
+	else if (currentUser == "Juan") {
 		currentUser = "Mario";
+				
+	} 
+	
+	else {
+		currentUser = "Josh";
 	}
+	
+		
+	 
 
 	document.getElementById("screen").innerHTML = "It's " + currentUser + "'s turn";
 }
